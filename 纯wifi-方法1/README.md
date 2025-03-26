@@ -1,5 +1,6 @@
 利用wifi定位的方法1，
 1、数据集的准备 
+    
     方法1
         数据：indoor-unified-wifi-ds
         code: Create Unified WiFi Features Example
@@ -7,6 +8,7 @@
         train 数据：BSSID 1到BSSID 100，RSSI 1到RSSI 100，pdr插值出来的x,y，楼层floor, 轨迹path,商场site
         test 数据：BSSID 1到BSSID 100，RSSI 1到RSSI 100，site_path_timestamp，商场site
 
+    
     方式2
         Make dataset with Wi-Fi and Beacon 
         方式和上述相同，只是多了beacon 
