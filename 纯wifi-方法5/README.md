@@ -18,4 +18,4 @@ For Fold 1, Best validation score of 60.09745407104492 was got at epoch 4
 Best valPosLoss for all folds = [57.42298889 60.09745407]
 Mean, std =58.76022148132324, 1.3372325897216797
 
-代码工整 但是模型简单 效果一般 没有没embedding操作
+代码工整 但是模型简单 效果一般 没有embedding操作
