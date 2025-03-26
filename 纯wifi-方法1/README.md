@@ -1,4 +1,5 @@
 利用wifi定位的方法1，
+
 1、数据集的准备 
     
     方法1
@@ -13,9 +14,11 @@
         Make dataset with Wi-Fi and Beacon 
         方式和上述相同，只是多了beacon 
 
+
 2、算法
 https://www.kaggle.com/code/luffy521/lstm-by-pytorch-with-unified-wi-fi-feats ，但是从验证结果看mean position error =30米，文件lstm-by-pytorch-with-unified-wi-fi-feats.ipynb是增加了注释的代码
 
 建模，代码中将【1，batch_size,维度】作为输入进入lstm 相当于 batch_sie=1 seq_len=batch_size,那么每条轨迹作为一个序列，轨迹上每个点作为序列的每一个点
+
 
 3、mean position error=30
