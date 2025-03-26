@@ -1,11 +1,14 @@
 利用wifi定位的方法2
+
 1、数据集
 https://www.kaggle.com/code/nischaydnk/indoor-location-rnn-data-v2-wifi-feats
 增加注释indoor-location-rnn-data-v2-wifi-feats.py
 
+
 2、代码
 https://www.kaggle.com/code/heliangyuan/indoor-location-rnn-v2
 建模，代码中【每个点，seq_len,维度】作为输入进入lstm 相当于每个点当作一个序列，每个点的所有wifi 按照lastseen  排成序列，输入到lstm
+
 
 3、结果
 epoch	train_loss	valid_loss	metric_fn	time
