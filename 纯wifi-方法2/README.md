@@ -11,6 +11,7 @@ https://www.kaggle.com/code/heliangyuan/indoor-location-rnn-v2
 
 
 3、结果
+
 epoch	train_loss	valid_loss	metric_fn	time
 
 0	83.068222	82.086716	81.186676	01:32
