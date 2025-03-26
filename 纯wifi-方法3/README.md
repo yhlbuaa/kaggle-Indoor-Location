@@ -1,4 +1,5 @@
 利用wifi定位的方法3
+
 1、数据集
 Fix data quality issues and reformat the training data through C++ custom code @ https://www.kaggle.com/oxzplvifi/indoor-cpp The procedure is shown @ https://www.kaggle.com/oxzplvifi/indoor-preprocessing-and-eda And the result is located @ https://www.kaggle.com/oxzplvifi/indoor-xy-floor
 File names are in the format "building_floor.csv"
@@ -11,13 +12,16 @@ Columns are:
 
 数据转化成上述格式，每一个build_每一个floor 一个文件夹
 
+
 2、首先进行楼层判断
 https://www.kaggle.com/code/oxzplvifi/indoor-kmeans-gbm-floor-prediction
 对于给定（x，y）的给定wifi bssid，rssi在楼上或楼下的强度可能比在同一楼层的远处更强。因此，在预测之前根据（x，y）对整个建筑进行聚类是有意义的，然后将楼层附加到聚类上，例如，楼层0将变为0_0,0_1,0_2,0_3
 每一层聚成4类
 
+
 3、用LightGBM 进行回归
 https://www.kaggle.com/code/wduuah/indoor 注释版见indoor.ipynb
+
 
 4、结果
 9	5a0546857ecc773753327266 xrmse = 1.82449793497846, yrmse = 1.369805772619651
