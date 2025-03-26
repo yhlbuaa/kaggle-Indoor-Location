@@ -1,4 +1,6 @@
+
 1、数据集
+
 https://www.kaggle.com/code/suryajrrafl/interpolated-imu-data
 对原始数据进行了线性插值
 数据中为什么陀螺仪只用z轴，因为数据采集时候，手机是端平的，所以z轴基本就是航向转动 ，参考https://www.kaggle.com/c/indoor-location-navigation/discussion/236096
@@ -10,12 +12,16 @@ imuDataOutput['inferenceTsList'] = inferenceTsList #decoder的输入 为【107�
 imuDataOutput['numWayPoints'] = numWayPointsList # decoderDataList中每条轨迹实际长度
 imuDataOutput['pathInitialTime'] = pathInitialTimeList #每条轨迹初始时间
 
+
 2、模型
+
 采用 Conv-se2seq-Attention mode 
 模型介绍https://blog.csdn.net/u010417185/article/details/83089986
 
 
+
 3、结果
+
 Fold 0 -> trainData shape = (8701, 7), validationData shape = (2176, 7)
 100%|██████████| 50/50 [21:34<00:00, 25.89s/it]
   0%|          | 0/50 [00:00<?, ?it/s]
